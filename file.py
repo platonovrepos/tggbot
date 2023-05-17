@@ -2,14 +2,12 @@ import os
 from dotenv_vault import load_dotenv
 from aiogram import Bot, Dispatcher, executor, types
 
-
 load_dotenv()
 s3_fdf = os.getenv("hello")
-print(s3_fdf)
 
 
 # Объект бота
-bot = Bot(TOKEN)
+bot = Bot(s3_fdf)
 # Диспетчер для бота
 dp = Dispatcher(bot)
 # Включаем логирование, чтобы не пропустить важные сообщения
