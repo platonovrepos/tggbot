@@ -1,6 +1,11 @@
+import os
+from dotenv_vault import load_dotenv
 from aiogram import Bot, Dispatcher, executor, types
 
 
+load_dotenv()
+s3_fdf = os.getenv("hello")
+print(s3_fdf)
 
 
 # Объект бота
